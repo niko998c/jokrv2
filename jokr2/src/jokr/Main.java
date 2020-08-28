@@ -30,13 +30,10 @@ public class Main {
 
         Scanner console = new Scanner(System.in);
 
-        String input = "";
         while(true) {
             int i = (int)Math.round(Math.random() * (list.size() -1));
-            input = console.nextLine();
-            if(input.equals("")) {
-                System.out.println(list.get(i));
-            }
+            String input = console.nextLine();
+            System.out.println(list.get(i));
         }
     }
 }
